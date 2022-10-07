@@ -12,3 +12,7 @@
     border-color: #F7AB0A;
     opacity: 0.4;
 }
+
+html {
+    scroll-behavior: scroll-smooth
+}
