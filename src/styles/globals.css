@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer components {
+    .heroButtons {
+        @apply px-6 mx-1 py-2 border border-[#242424] rounded-full uppercase text-xs tracking-widest text-gray-500 transition-all
+    }
+}
+
+.heroButtons:hover {
+    color: #F7AB0A;
+    border-color: #F7AB0A;
+    opacity: 0.4;
+}
