@@ -13,6 +13,33 @@
     opacity: 0.4;
 }
 
+.contactInput {
+    @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-[#242424] text-gray-500 placeholder-gray-500 transition-all
+}
+
+.contactInput:hover {
+    border-bottom: 1px solid #f7ab0a66;
+}
+
+.contactInput:focus {
+    border-color: #f7ab0a66;
+    color: #f7ab0a66;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1b1b1b;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f7ab0a;
+    border-radius: 6px;
+}
+
 html {
     scroll-behavior: scroll-smooth
 }

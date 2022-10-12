@@ -1,6 +1,7 @@
 import React from 'react'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 
+import { motion } from 'framer-motion'
 import Image from 'next/future/image'
 import Link from 'next/link'
 
@@ -19,14 +20,18 @@ export default function Hero() {
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden ">
       <BackgroundCircles />
-      <div className="rounded-full relative h-32 w-32">
+      <motion.div
+        whileHover={{ scale: 1.1 }}
+        transition={{ duration: 0.5 }}
+        className="rounded-full relative h-32 w-32"
+      >
         <Image
           src="/img/me.jpeg"
           alt="an image of me"
           fill
           className="rounded-full"
         />
-      </div>
+      </motion.div>
       <div className="z-20">
         <h2 className="text-sm uppercase text-gray-500 tracking-[4px]">
           software engineer
