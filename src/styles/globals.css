@@ -43,3 +43,15 @@
 html {
     scroll-behavior: scroll-smooth
 }
+
+.slick-dots {
+    bottom: 200px !important;
+}
+
+.slick-next {
+    right: 30px !important;
+}
+
+.slick-prev {
+    left: 30px !important;
+}
